@@ -10,20 +10,36 @@ Output only json in this exact format. Do not output any greetings or explanatio
 
 Use nearby context to create meaningful event names.
 
-Examples:
+Example:
 Input:
-Free food is provided for the Infosys internship, which starts on July 7, and has to be applied on haveloc on or before May 10, 8pm. The monthly stipend is 35000.
+Free food is provided for the Infosys internship, which starts on July 7, and has to be applied on haveloc on or before tomorrow 8pm. The monthly stipend is 35000. The hackathon dates are May 11,12, and 13. Training starts next week friday.
 
 Output:
 {
     "events": [
         {
             "event": "Infosys internship application deadline",
-            "time": "May 10, 8 PM"
+            "time": "Tomorrow, 8 PM"
         },
         {
             "event": "Infosys internship start date",
             "time": "July 7"
+        },
+        {
+            "event": "Hackathon",
+            "time": "May 11"
+        },
+        {
+            "event": "Hackathon",
+            "time": "May 12"
+        },
+        {
+            "event": "Hackathon",
+            "time": "May 13"
+        },
+        {
+            "event": "Training",
+            "time": "Next Friday"
         }
     ]
 }
