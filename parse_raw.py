@@ -62,7 +62,6 @@ with open("prompt.txt") as f:
     prompt = f.read()
 
 text = """
-We have distributed systems test on January 10
 """
 
 start = time.time()

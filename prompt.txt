@@ -43,3 +43,5 @@ Output:
         }
     ]
 }
+
+You are allowed to ouput nothing if the text is completely irrelevant
