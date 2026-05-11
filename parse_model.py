@@ -107,9 +107,12 @@ def generate_with_metrics(
 with open("prompt.txt") as f:
         prompt = f.read()
 
-text = """
-We have distributed systems test on January 10th.
-"""
+with open("samples.txt") as f:
+    text = f.read()
+
+# text = """
+# We have distributed systems test on January 10th.
+# """
 
 print("Cold Run")
 output_1 = generate_with_metrics(text, prompt)

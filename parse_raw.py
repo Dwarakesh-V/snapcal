@@ -5,7 +5,7 @@ from llama_cpp import Llama
 def generate(
     user_input: str,
     system_prompt: str,
-    max_tokens: int = 256,
+    max_tokens: int = 1024,
     temperature: float = 0.0,
     top_p: float = 1.0,
 ) -> str:
@@ -61,8 +61,8 @@ def generate(
 with open("prompt.txt") as f:
     prompt = f.read()
 
-text = """
-"""
+with open("samples.txt") as f:
+    text = f.read()
 
 start = time.time()
 output = generate(text, prompt)
